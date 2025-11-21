@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MoroSport/static/css/main.d8a6f4d1.css",
+    "main.js": "/MoroSport/static/js/main.a66ad83c.js",
+    "static/js/453.2fcb552d.chunk.js": "/MoroSport/static/js/453.2fcb552d.chunk.js",
+    "index.html": "/MoroSport/index.html",
+    "main.d8a6f4d1.css.map": "/MoroSport/static/css/main.d8a6f4d1.css.map",
+    "main.a66ad83c.js.map": "/MoroSport/static/js/main.a66ad83c.js.map",
+    "453.2fcb552d.chunk.js.map": "/MoroSport/static/js/453.2fcb552d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8a6f4d1.css",
+    "static/js/main.a66ad83c.js"
+  ]
+}
