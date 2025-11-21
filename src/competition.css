@@ -1,0 +1,335 @@
+/* src/competition.css */
+
+/* ====== GLOBAL PAGE (football stripes background) ====== */
+.pitch-bg {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    #d9f99d,
+    #d9f99d 60px,
+    #bbf7d0 60px,
+    #bbf7d0 120px
+  );
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+/* ====== FULL-WIDTH SLIDE WRAPPER (no more “phone”) ====== */
+.phone-frame {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* Main scroll area – big PPT slide style */
+.cp-main {
+  padding: 0 40px 32px;
+  box-sizing: border-box;
+}
+
+/* ====== HEADER – like PPT title bar ====== */
+.cp-header {
+  display: flex;
+  gap: 18px;
+  padding: 20px 40px 16px;
+  background: linear-gradient(120deg, #15803d, #16a34a);
+  color: #ecfdf5;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.3);
+}
+
+.cp-logo-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #22c55e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.cp-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.cp-subtitle {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* ====== TOP NAV TABS (Competition map / SWOT / etc.) ====== */
+.cp-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 36px 14px;
+  background: #e5f9ed;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+
+.cp-nav a {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #16a34a40;
+  background: #ffffff;
+  text-decoration: none;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.cp-nav a:hover {
+  background: #bbf7d0;
+}
+
+/* ====== SECTIONS (each one looks like a PPT slide block) ====== */
+.cp-section {
+  margin: 26px 0;
+  padding: 20px 24px 22px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.55);
+}
+
+.cp-section h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.cp-section-text {
+  font-size: 14px;
+  margin: 0 0 14px;
+  color: #475569;
+}
+
+.cp-section-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  margin-bottom: 6px;
+}
+
+/* ====== COMPETITION MAP TABLE ====== */
+.cp-map-grid {
+  font-size: 13px;
+}
+
+.cp-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.pill-yes,
+.pill-mid,
+.pill-no {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f1f5f9;
+}
+
+.pill-yes { color: #15803d; }
+.pill-mid { color: #92400e; }
+.pill-no  { color: #b91c1c; }
+
+.cp-map-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.cp-map-row:nth-child(even) {
+  background: #f8fafc;
+}
+
+.cp-map-row--head {
+  background: #0f172a;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.cp-map-row--moro {
+  background: #ecfdf5;
+  border: 1px solid #16a34a80;
+}
+
+.cp-map-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cp-app-name {
+  font-weight: 600;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+}
+.dot-yes { background: #16a34a; }
+.dot-mid { background: #f97316; }
+.dot-no  { background: #ef4444; }
+
+/* ====== SWOT GRID ====== */
+.cp-swot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-size: 13px;
+}
+
+.cp-swot-box {
+  border-radius: 14px;
+  padding: 10px 10px 8px;
+  background: #f9fafb;
+  border: 1px solid #e2e8f0;
+}
+
+.cp-swot-box h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.cp-swot-box ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.cp-swot-box li {
+  margin-bottom: 3px;
+}
+
+.cp-swot-strengths {
+  background: #ecfdf5;
+  border-color: #4ade80;
+}
+.cp-swot-opportunities {
+  background: #eff6ff;
+  border-color: #60a5fa;
+}
+.cp-swot-weaknesses {
+  background: #fef9c3;
+  border-color: #eab308;
+}
+.cp-swot-threats {
+  background: #fee2e2;
+  border-color: #f97373;
+}
+
+/* ====== WHY MOROSPORT WINS ====== */
+.cp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  font-size: 13px;
+}
+
+.cp-why-card {
+  border-radius: 14px;
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.cp-why-card h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+/* ====== COMPARISON TABLE ====== */
+.cp-compare-table {
+  font-size: 13px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.cp-compare-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+  gap: 6px;
+  padding: 6px 8px;
+}
+
+.cp-compare-row:nth-child(even) {
+  background: #f8fafc;
+}
+
+.cp-compare-head {
+  background: #0f172a;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.cp-compare-cell {
+  display: flex;
+  align-items: center;
+}
+
+.cp-feature-name {
+  font-weight: 500;
+}
+
+.cp-moro-highlight {
+  font-weight: 700;
+  color: #166534;
+}
+
+/* ====== FOOTER ====== */
+.cp-footer {
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* ====== RESPONSIVE (for small screens) ====== */
+@media (max-width: 768px) {
+  .cp-main {
+    padding: 0 16px 20px;
+  }
+
+  .cp-header {
+    flex-direction: row;
+    padding: 16px 16px 12px;
+  }
+
+  .cp-title {
+    font-size: 20px;
+  }
+
+  .cp-swot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cp-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-compare-row {
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 1.1fr;
+  }
+}
